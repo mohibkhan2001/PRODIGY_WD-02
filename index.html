@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="watch">
+            <span class="mins">00:&nbsp;</span>
+            <span class="sec">00:&nbsp;</span>
+            <span class="msec">00</span>
+        </div>
+        <div class="watch-btns">
+            <button class="control-btn start-btn">Start</button>
+            <button class="control-btn pause-btn" disabled>Pause</button>
+            <button class="control-btn reset-btn" disabled>Reset</button>
+            <button class="control-btn lap-btn" disabled>Lap</button>
+        </div>
+    </div>
+
+    <!-- Add style to hide laps section initially -->
+    <div class="wrapper2" style="display: none;">
+        <h1>Stop Watch Laps</h1>
+        <ul id="laps-list">
+            <!-- Laps will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

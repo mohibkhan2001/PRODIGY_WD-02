@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    height: 50vh;
+    width: 50%;
+}
+
+.watch {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch span {
+    font-size: 6rem;
+    color: #fff;
+}
+
+.watch .msec {
+    color: #363232;
+    font-size: 5.5rem;
+}
+
+.watch-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.watch-btns button {
+    height: 3rem;
+    width: 10vw;
+    margin: 0 10px;
+    border-radius: 2px;
+    outline: 0;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.watch-btns button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.watch-btns button:hover:not(:disabled) {
+    background-color: #e68900;
+}
+
+.wrapper2 {
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.wrapper2 h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.wrapper2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper2 ul li {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
